@@ -25,49 +25,26 @@
           style=""
         >
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+            <li
+              v-for="i in arrLink"
+              :key="i"
+              class="nav-item"
+            >
               <a
                 class="nav-link"
                 aria-current="page"
                 href="#"
-              >Home</a>
+              >{{ i }}</a>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#"
-              >Services</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#"
-              >About</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#"
-              >Videos</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#"
-              >Blog</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#"
-              >Store <span class="news_info">new</span></a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link btn btn-primary btn_header"
-                href="#"
-              > Schedule a workout</a>
-            </li>
+            <a
+              class="nav-link"
+              href="#"
+            ><span class="news_info">new</span>
+            </a>
+            <a
+              class="nav-link btn btn-primary btn_header"
+              href="#"
+            > Schedule a workout</a>
           </ul>
           <div class="icon">
             <i class="fa-solid fa-cart-shopping px-4" />
@@ -82,6 +59,11 @@
 <script>
 export default {
   name: 'HeaderPage',
+  data() {
+    return {
+      arrLink: ['Home', 'Services', 'About', 'Videos', 'Blog', 'Stores'],
+    };
+  },
 };
 </script>
 
@@ -113,6 +95,10 @@ i {
   padding: .2em .4em;
   font-size: small;
   color: black;
+  &:hover {
+    color: rgb(255, 255, 255);
+    background-color: goldenrod;
+  }
 }
 
 .logo_navbar:hover {
