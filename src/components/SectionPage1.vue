@@ -1,5 +1,8 @@
 <template>
-  <section class="intro_sect">
+  <section
+    id="start_app"
+    class="intro_sect"
+  >
     <div class="gradient_box">
       <div class="container py-5">
         <h3>

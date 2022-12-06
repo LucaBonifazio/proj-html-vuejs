@@ -26,10 +26,10 @@
         <!-- eslint-disable-next-line -->
         <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet, consectetur adipiscin elit sed porttitor lectus</p>
       </div>
-      <div class="d-flex justify-content-center bg_black p-5">
-        <div class="container">
+      <div class="bg_black">
+        <div class="container p-5">
           <!-- eslint-disable-next-line -->
-          <div class="row row-cols-sm-1 row-cols-md-3 row-cols-lg-4 text-white text-center d-flex justify-content-center">
+          <div class="row row-cols-sm-1 row-cols-md-3 row-cols-lg-4 text-white text-center">
             <div class="col card_bb">
               <img
                 class="img-fluid card_img"
@@ -55,7 +55,7 @@
                 <h6>Push your limits</h6>
                 <!-- eslint-disable-next-line -->
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, hic fugiat? Totam, facere! Nisi magni, necessitatibus ratione rem ullam voluptate saepe.</p>
-                <a href="#!">Find a partner <i class="fa-solid fa-chevron-right" /></a>
+                <a href="#!">Learn about Corssfit <i class="fa-solid fa-chevron-right" /></a>
               </div>
             </div>
             <div class="col card_bb">
@@ -69,7 +69,7 @@
                 <h6>Shed those pounds</h6>
                 <!-- eslint-disable-next-line -->
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, hic fugiat? Totam, facere! Nisi magni, necessitatibus ratione rem ullam voluptate saepe.</p>
-                <a href="#!">Find a partner <i class="fa-solid fa-chevron-right" /></a>
+                <a href="#!">Schedule a workout <i class="fa-solid fa-chevron-right" /></a>
               </div>
             </div>
           </div>
@@ -127,7 +127,8 @@ export default {
   }
 
   .row {
-    gap: 3rem;
+    display: flex;
+    justify-content: space-between;
   }
 
   .card_bb{
