@@ -7,6 +7,7 @@
           src="@/assets/img/service15-2x.jpg"
           alt="photo"
         >
+        <i class="fa-solid fa-play" />
       </div>
       <div class="text_box">
         <h5>Tune up your workout</h5>
@@ -43,12 +44,13 @@
         <div><a href="#!"><strong> View all videos</strong><i class="fa-solid fa-chevron-right" /></a></div>
       </div>
       <div class="row row-cols-3">
-        <div class="col">
+        <div class="col position-relative">
           <img
             class="img-fluid"
             src="@/assets/img/video2-2x.jpg"
-            alt=""
+            alt="photo"
           >
+          <i class="fa-solid fa-play icon_sm" />
           <div class="subtext_box text-center p-1">
             <h6>Thighs & glute workout</h6>
             <div class="text_img">
@@ -56,12 +58,13 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col position-relative">
           <img
             class="img-fluid"
             src="@/assets/img/video7-2x.jpg"
-            alt=""
+            alt="photo"
           >
+          <i class="fa-solid fa-play icon_sm" />
           <div class="subtext_box text-center p-1">
             <h6>Lift, firm & perk up</h6>
             <div class="text_img">
@@ -69,12 +72,13 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col position-relative">
           <img
             class="img-fluid"
             src="@/assets/img/video9-2x.jpg"
-            alt=""
+            alt="photo"
           >
+          <i class="fa-solid fa-play icon_sm" />
           <div class="subtext_box text-center p-1">
             <h6>Slim & trim your waist</h6>
             <div class="text_img">
@@ -164,6 +168,7 @@ a {
 }
 
 .col img {
+  position: relative;
     border-radius: 2px 2px 50px 2px;
     padding-bottom: .5em;
     &:hover {
@@ -175,4 +180,15 @@ a {
   margin-bottom: 5rem;
 }
 
+.fa-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .icon_sm{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 </style>

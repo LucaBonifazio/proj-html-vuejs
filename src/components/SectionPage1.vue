@@ -1,20 +1,23 @@
 <template>
   <section class="intro_sect">
-    <div class="container py-5">
-      <h3>
-        Certified fitness professional
-      </h3>
-      <h1>Take control of your health</h1>
-      <i class="fa-solid fa-chevron-up gold_icon" />
-      <i class="fa-solid fa-chevron-up gold_icon" />
-      <i class="fa-solid fa-chevron-up gold_icon" />
-      <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet</p>
-      <div class="btn btn-primary p-3 px-4 me-4">
-        <i class="fa-brands fa-youtube me-2" />Visit my YouTube channel
+    <div class="gradient_box">
+      <div class="container py-5">
+        <h3>
+          Certified fitness professional
+        </h3>
+        <h1>Take control of your health</h1>
+        <i class="fa-solid fa-chevron-up gold_icon" />
+        <i class="fa-solid fa-chevron-up gold_icon" />
+        <i class="fa-solid fa-chevron-up gold_icon" />
+        <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet</p>
+        <div class="btn btn-primary p-3 px-4 me-4">
+          <i class="fa-brands fa-youtube me-2" />Visit my YouTube channel
+        </div>
+        <div class="btn btn-dark p-3 px-4">
+          Buy Avada today<i class="fa-solid fa-arrow-right mx-2" />
+        </div>
       </div>
-      <div class="btn btn-dark p-3 px-4">
-        Buy Avada today<i class="fa-solid fa-arrow-right mx-2" />
-      </div>
+      <i class="fa-solid fa-play" />
     </div>
   </section>
 </template>
@@ -31,6 +34,7 @@ export default {
     background-image: url('@/assets/img/slider82x-scaled.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
   }
 
   h3 {
@@ -55,4 +59,17 @@ export default {
     color: rgb(122, 122, 122);
   }
 
+  .fa-play{
+    position: absolute;
+    top: 30%;
+    right: 20%;
+  }
+
+  .gradient_box{
+  height: 100%;
+  // eslint-disable-next-line
+  background-image: linear-gradient(to right, rgb(0, 0, 0),
+  rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0),rgba(255, 255, 255, 0),
+  rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
+}
 </style>

@@ -1,74 +1,76 @@
 <template>
   <section class="trainer_sect">
-    <div class="container pt-5">
-      <h3>
-        Join our mailing today
-      </h3>
-      <h1>Insider offers & flash sales in your inbox every week</h1>
-      <i class="fa-solid fa-chevron-up gold_icon" />
-      <i class="fa-solid fa-chevron-up gold_icon" />
-      <i class="fa-solid fa-chevron-up gold_icon" />
-      <form @submit.prevent>
-        <label for="mail">
-          <input
-            id="mail"
-            v-model="email"
-            type="email"
-            class="form-control"
-            placeholder="Insert your email...*"
-          >
-        </label>
-        <button class="btn btn-primary px-5">
-          Subscribe
-        </button>
-      </form>
-      <!-- eslint-disable-next-line -->
-      <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet, consectetur adipiscin elit sed porttitor lectus</p>
-    </div>
-    <div class="d-flex justify-content-center bg_black p-5">
-      <div class="container">
+    <div class="gradient_box">
+      <div class="container pt-5">
+        <h3>
+          Join our mailing today
+        </h3>
+        <h1>Insider offers & flash sales in your inbox every week</h1>
+        <i class="fa-solid fa-chevron-up gold_icon" />
+        <i class="fa-solid fa-chevron-up gold_icon" />
+        <i class="fa-solid fa-chevron-up gold_icon" />
+        <form @submit.prevent>
+          <label for="mail">
+            <input
+              id="mail"
+              v-model="email"
+              type="email"
+              class="form-control"
+              placeholder="Insert your email...*"
+            >
+          </label>
+          <button class="btn btn-primary px-5">
+            Subscribe
+          </button>
+        </form>
         <!-- eslint-disable-next-line -->
-        <div class="row row-cols-sm-1 row-cols-md-3 row-cols-lg-4 text-white text-center d-flex justify-content-center">
-          <div class="col card_bb">
-            <img
-              class="img-fluid card_img"
-              src="https://freesvg.org/img/Wrist-Watch-Line-Art.png"
-              alt="watch"
-            >
-            <div class="subtext_box text-center px-1">
-              <h5>Team training</h5>
-              <h6>Find a partner</h6>
-              <!-- eslint-disable-next-line -->
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, hic fugiat? Totam, facere! Nisi magni, necessitatibus ratione rem ullam voluptate saepe.</p>
-              <a href="#!">Find a partner <i class="fa-solid fa-chevron-right" /></a>
+        <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet, consectetur adipiscin elit sed porttitor lectus</p>
+      </div>
+      <div class="d-flex justify-content-center bg_black p-5">
+        <div class="container">
+          <!-- eslint-disable-next-line -->
+          <div class="row row-cols-sm-1 row-cols-md-3 row-cols-lg-4 text-white text-center d-flex justify-content-center">
+            <div class="col card_bb">
+              <img
+                class="img-fluid card_img"
+                src="https://freesvg.org/img/Wrist-Watch-Line-Art.png"
+                alt="watch"
+              >
+              <div class="subtext_box text-center px-1">
+                <h5>Team training</h5>
+                <h6>Find a partner</h6>
+                <!-- eslint-disable-next-line -->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, hic fugiat? Totam, facere! Nisi magni, necessitatibus ratione rem ullam voluptate saepe.</p>
+                <a href="#!">Find a partner <i class="fa-solid fa-chevron-right" /></a>
+              </div>
             </div>
-          </div>
-          <div class="col card_bb">
-            <img
-              class="img-fluid card_img"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKQDlZf-U_nNr-PMfabecNyuajxqPSMExOz3P51A9iz8xsI0lHpVenYkF4YKQ4FfQM3Yg&usqp=CAU"
-              alt="crossfit"
-            >
-            <div class="subtext_box text-center px-1">
-              <h5>Crossfit workout</h5>
-              <h6>Push your limits</h6>
-              <!-- eslint-disable-next-line -->
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, hic fugiat? Totam, facere! Nisi magni, necessitatibus ratione rem ullam voluptate saepe.</p>
-              <a href="#!">Find a partner <i class="fa-solid fa-chevron-right" /></a>
+            <div class="col card_bb">
+              <img
+                class="img-fluid card_img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKQDlZf-U_nNr-PMfabecNyuajxqPSMExOz3P51A9iz8xsI0lHpVenYkF4YKQ4FfQM3Yg&usqp=CAU"
+                alt="crossfit"
+              >
+              <div class="subtext_box text-center px-1">
+                <h5>Crossfit workout</h5>
+                <h6>Push your limits</h6>
+                <!-- eslint-disable-next-line -->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, hic fugiat? Totam, facere! Nisi magni, necessitatibus ratione rem ullam voluptate saepe.</p>
+                <a href="#!">Find a partner <i class="fa-solid fa-chevron-right" /></a>
+              </div>
             </div>
-          </div>
-          <div class="col card_bb">
-            <img
-              class="img-fluid card_img"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Pictograms-nps-land-exercise-fitness-2.svg/2048px-Pictograms-nps-land-exercise-fitness-2.svg.png"
-              alt="fitness"
-            >
-            <div class="subtext_box text-center px-1">
-              <h5>Weight loss plan</h5>
-              <h6>Shed those pounds</h6>
-              <!-- eslint-disable-next-line -->
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, hic fugiat? Totam, facere! Nisi magni, necessitatibus ratione rem ullam voluptate saepe.</p>
-              <a href="#!">Find a partner <i class="fa-solid fa-chevron-right" /></a>
+            <div class="col card_bb">
+              <img
+                class="img-fluid card_img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Pictograms-nps-land-exercise-fitness-2.svg/2048px-Pictograms-nps-land-exercise-fitness-2.svg.png"
+                alt="fitness"
+              >
+              <div class="subtext_box text-center px-1">
+                <h5>Weight loss plan</h5>
+                <h6>Shed those pounds</h6>
+                <!-- eslint-disable-next-line -->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, hic fugiat? Totam, facere! Nisi magni, necessitatibus ratione rem ullam voluptate saepe.</p>
+                <a href="#!">Find a partner <i class="fa-solid fa-chevron-right" /></a>
+              </div>
             </div>
           </div>
         </div>
@@ -147,4 +149,12 @@ export default {
     width: 70px;
     height: 70px;
   }
+
+  .gradient_box{
+  height: 100%;
+  // eslint-disable-next-line
+  background-image: linear-gradient(to right, rgb(0, 0, 0),
+  rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0),rgba(255, 255, 255, 0),
+  rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
+}
 </style>
