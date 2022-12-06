@@ -5,6 +5,7 @@
     <SectionPage3 />
     <SectionPage4 />
     <SectionPage5 />
+    <SectionPage6 />
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import SectionPage2 from '@/components/SectionPage2.vue';
 import SectionPage3 from '@/components/SectionPage3.vue';
 import SectionPage4 from '@/components/SectionPage4.vue';
 import SectionPage5 from '@/components/SectionPage5.vue';
+import SectionPage6 from '@/components/SectionPage6.vue';
 
 export default {
   name: 'MainPage',
@@ -23,6 +25,7 @@ export default {
     SectionPage3,
     SectionPage4,
     SectionPage5,
+    SectionPage6,
   },
 };
 </script>
