@@ -103,11 +103,19 @@ export default {
     padding: 1em;
     max-width: 300px;
     height: 300px;
+    img{
+      border-radius: 2px 2px 50px 2px;;
+    }
   }
 
-  .card:hover {
-    transform: scale(1.2);
+  .card {
+    background-color: rgba(255, 255, 255, 0)!important;
+    border: none;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
+
   .card-img-overlay {
     padding-top: 10rem;
   }
