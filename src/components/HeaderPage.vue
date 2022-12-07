@@ -9,7 +9,7 @@
           >
         </div>
         <button
-          class="navbar-toggler collapsed"
+          class="navbar-toggler collapsed hamburger_icon"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarText"
@@ -77,6 +77,13 @@ i {
   color: rgb(124, 124, 124);
   &:hover {
     color: rgb(255, 255, 255);
+  }
+}
+
+.hamburger_icon{
+  background-color: rgb(124, 124, 124);
+  &:hover {
+    background-color: rgb(185, 185, 185);
   }
 }
 

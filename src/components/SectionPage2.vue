@@ -2,7 +2,7 @@
   <section class="choise_sect">
     <div class="container">
       <div class="row row-cols-3 container card_box">
-        <div class="col image_1">
+        <div class="col">
           <div class="card text-bg-dark">
             <img
               src="@/assets/img/service6-2x.jpg"
@@ -22,7 +22,7 @@
             </div>
           </div>
         </div>
-        <div class="col image_2">
+        <div class="col">
           <div class="card text-bg-dark">
             <img
               src="@/assets/img/box1-2x.jpg"
@@ -42,7 +42,7 @@
             </div>
           </div>
         </div>
-        <div class="col image_3">
+        <div class="col">
           <div class="card text-bg-dark">
             <img
               src="@/assets/img/box3-2x.jpg"
@@ -75,8 +75,8 @@
             src="@/assets/img/avatar-1-2x.jpg"
             alt="photo"
           >
-          <span class="avatar_name text-white px-4">Brad Johnson</span>
-          <small class="avatar_loco">Las Vegas</small>
+          <span class="avatar_name px-4">Brad Johnson</span>
+          <span class="avatar_loco">Las Vegas</span>
         </div>
       </div>
     </div>
@@ -97,9 +97,7 @@ export default {
     height: 800px;
   }
 
-  .image_1,
-  .image_2,
-  .image_3 {
+ .col {
     padding: 1em;
     max-width: 300px;
     height: 300px;
@@ -142,9 +140,25 @@ export default {
     .avatar_image {
       border-radius: 10rem;
     }
+    .avatar_name {
+      color: rgb(255, 255, 255);
+    }
     &:hover {
       cursor: pointer;
       transform: scale(1.2);
+      span {
+        color: gold;
+      }
     }
   }
+
+  .avatar_loco{
+    color: rgb(82, 82, 82);
+  }
+
+  .gradient_box{
+  height: 100%;
+  // eslint-disable-next-line
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0),);
+}
 </style>
