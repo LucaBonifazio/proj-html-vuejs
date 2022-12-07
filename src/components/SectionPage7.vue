@@ -97,10 +97,6 @@ a {
 }
 
 .col {
-  .col img {
-    width: 200px;
-    padding-bottom: .5em;
-  }
   &:hover {
     cursor: pointer;
     transform: scale(1.1);

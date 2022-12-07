@@ -9,15 +9,17 @@
               class="card-img"
               alt="photo"
             >
-            <div class="card-img-overlay">
-              <i class="fa-solid fa-chevron-up" />
-              <i class="fa-solid fa-chevron-up" />
-              <i class="fa-solid fa-chevron-up" />
-              <h5 class="card-title">
-                Crossfit Workout
-              </h5>
-              <div class="card-text">
-                Push your limit
+            <div class="card-img-overlay gradient_box">
+              <div class="container_img_text">
+                <i class="fa-solid fa-chevron-up" />
+                <i class="fa-solid fa-chevron-up" />
+                <i class="fa-solid fa-chevron-up" />
+                <h5 class="card-title">
+                  Crossfit Workout
+                </h5>
+                <div class="card-text">
+                  Push your limit
+                </div>
               </div>
             </div>
           </div>
@@ -29,15 +31,17 @@
               class="card-img"
               alt="photo"
             >
-            <div class="card-img-overlay">
-              <i class="fa-solid fa-chevron-up" />
-              <i class="fa-solid fa-chevron-up" />
-              <i class="fa-solid fa-chevron-up" />
-              <h5 class="card-title">
-                New gym apparel
-              </h5>
-              <div class="card-text">
-                Look good, feel good
+            <div class="card-img-overlay gradient_box">
+              <div class="container_img_text">
+                <i class="fa-solid fa-chevron-up" />
+                <i class="fa-solid fa-chevron-up" />
+                <i class="fa-solid fa-chevron-up" />
+                <h5 class="card-title">
+                  New gym apparel
+                </h5>
+                <div class="card-text">
+                  Look good, feel good
+                </div>
               </div>
             </div>
           </div>
@@ -49,15 +53,17 @@
               class="card-img"
               alt="photo"
             >
-            <div class="card-img-overlay">
-              <i class="fa-solid fa-chevron-up" />
-              <i class="fa-solid fa-chevron-up" />
-              <i class="fa-solid fa-chevron-up" />
-              <h5 class="card-title">
-                Team training
-              </h5>
-              <div class="card-text">
-                Fidn a partner
+            <div class="card-img-overlay gradient_box">
+              <div class="container_img_text">
+                <i class="fa-solid fa-chevron-up" />
+                <i class="fa-solid fa-chevron-up" />
+                <i class="fa-solid fa-chevron-up" />
+                <h5 class="card-title">
+                  Team training
+                </h5>
+                <div class="card-text">
+                  Fidn a partner
+                </div>
               </div>
             </div>
           </div>
@@ -94,28 +100,23 @@ export default {
   .choise_sect {
     position: relative;
     background-image: linear-gradient(to bottom right, #2805c4, #bc0428);
-    height: 800px;
-  }
-
- .col {
-    padding: 1em;
-    max-width: 300px;
-    height: 300px;
-    img{
-      border-radius: 2px 2px 50px 2px;;
-    }
+    padding-bottom: 8rem;
   }
 
   .card {
     background-color: rgba(255, 255, 255, 0)!important;
     border: none;
+    border-radius: 2px 2px 50px 2px;
+    overflow: hidden;
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
+      transition: 1s;
     }
   }
 
-  .card-img-overlay {
-    padding-top: 10rem;
+  .container_img_text{
+    position: absolute;
+    bottom: 4px;
   }
 
   .card-text,
@@ -126,7 +127,7 @@ export default {
   .motivational_text {
     font-size: 2rem;
     max-width: 750px;
-    padding-top: 20rem;
+    padding-top: 25rem;
   }
 
   .card_box {
@@ -146,6 +147,7 @@ export default {
     &:hover {
       cursor: pointer;
       transform: scale(1.2);
+      transition: 1s;
       span {
         color: gold;
       }

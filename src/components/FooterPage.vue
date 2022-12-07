@@ -21,22 +21,11 @@
         <div class="col text-center">
           <h5>RECENT POSTS</h5>
           <ul>
-            <li><a href="#!"><i class="fa-solid fa-chevron-right" /> The best protein shake</a></li>
-            <li>
-              <a href="#!">
-                <i class="fa-solid fa-chevron-right">Ultimate cardio workout</i>
-              </a>
-            </li>
-            <li><a href="#!"><i class="fa-solid fa-chevron-right" /> New juices avaible now</a></li>
-            <li>
-              <a href="#!"><i class="fa-solid fa-chevron-right" />
-                Tips to find training partners
-              </a>
-            </li>
-            <li>
-              <a href="#!">
-                <i class="fa-solid fa-chevron-right" /> 20 best healthy recipes
-              </a>
+            <li
+              v-for="post in posts"
+              :key="post.i"
+            >
+              <a href="#!"><i class="fa-solid fa-chevron-right" />{{ post }}</a>
             </li>
           </ul>
         </div>
@@ -59,24 +48,26 @@
       style="color:lightgrey"
     >
       <!-- eslint-disable-next-line -->
-      <div><i class="fa-regular fa-copyright"></i> Copyright 2012 -2020|Avada theme by <strong style="color: white">ThemFusion</strong>|All rights reserved|Powere by <strong style="color: white">WordPress</strong></div>
+      <div class="p-4"><i class="fa-regular fa-copyright"></i> Copyright 2012 -2020|Avada theme by <strong style="color: white">ThemFusion</strong>|All rights reserved|Powere by <strong style="color: white">WordPress</strong></div>
     </div>
-    <!-- <a href="#start_app">
+    <!-- eslint-disable-next-line -->
+    <a href="#start_app">
       <i class="fa-solid fa-chevron-up icon_multiverse" />
-    </a> -->
+    </a>
   </footer>
 </template>
 
 <script>
 export default {
   name: 'FooterPage',
-
+  props: {
+    posts: Array,
+  },
 };
 </script>
 
 <style scoped lang="scss">
   .bg__black{
-    height: 400px;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
   }
@@ -111,6 +102,7 @@ export default {
     right: 50px;
     padding: .6em 1em;
     border-radius: 2px;
+    color: rgb(255, 255, 255);
     background-color: rgb(56, 56, 56);
     &:hover {
       background-color: rgb(109, 109, 109);

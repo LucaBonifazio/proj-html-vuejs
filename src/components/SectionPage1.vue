@@ -3,35 +3,33 @@
     id="start_app"
     class="intro_sect"
   >
-    <div class="gradient_box">
-      <div class="container py-5">
-        <h3>
-          Certified fitness professional
-        </h3>
-        <h1>Take control of your health</h1>
-        <i class="fa-solid fa-chevron-up gold_icon" />
-        <i class="fa-solid fa-chevron-up gold_icon" />
-        <i class="fa-solid fa-chevron-up gold_icon" />
-        <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet</p>
-        <div class="btn btn-primary p-3 px-4 me-4">
-          <i class="fa-brands fa-youtube me-2" />Visit my YouTube channel
-        </div>
-        <div class="btn btn-dark btn_black p-3 px-4">
-          Buy Avada today<i class="fa-solid fa-arrow-right mx-2" />
-        </div>
+    <div class="container py-5 gradient_box">
+      <h3>
+        Certified fitness professional
+      </h3>
+      <h1>Take control of your health</h1>
+      <i class="fa-solid fa-chevron-up gold_icon" />
+      <i class="fa-solid fa-chevron-up gold_icon" />
+      <i class="fa-solid fa-chevron-up gold_icon" />
+      <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet</p>
+      <div class="btn btn-primary p-3 px-4 me-4">
+        <i class="fa-brands fa-youtube me-2" />Visit my YouTube channel
       </div>
-      <i class="fa-solid fa-play" />
-      <div class="sq_folder">
-        <i class="fa-solid fa-id-card-clip" />
-        <div><strong>Demos</strong></div>
+      <div class="btn btn-dark btn_black p-3 px-4">
+        Buy Avada today<i class="fa-solid fa-arrow-right mx-2" />
       </div>
-      <div class="sq_sale">
-        <div class="price_sale">
-          $ 39
-        </div>
-        <div>
-          <strong>On Sale</strong>
-        </div>
+    </div>
+    <i class="fa-solid fa-play" />
+    <div class="sq_folder">
+      <i class="fa-solid fa-id-card-clip" />
+      <div><strong>Demos</strong></div>
+    </div>
+    <div class="sq_sale">
+      <div class="price_sale">
+        $ 39
+      </div>
+      <div>
+        <strong>On Sale</strong>
       </div>
     </div>
   </section>
@@ -83,6 +81,14 @@ export default {
     right: 20%;
   }
 
+  .gradient_box{
+  height: 100%;
+  // eslint-disable-next-line
+  background-image: linear-gradient(to right, rgb(0, 0, 0),
+  rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0),rgba(255, 255, 255, 0),
+  rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
+}
+
   .sq_folder,
   .sq_sale{
     display: flex;
@@ -107,12 +113,12 @@ export default {
   .sq_folder {
     position: absolute;
     top: 50px;
-    right: 10px;
+    right: 15px;
   }
   .sq_sale {
     position: absolute;
     top: 120px;
-    right: 10px;
+    right: 15px;
     white-space: nowrap;
     .price_sale{
       color: rgb(0, 194, 0);

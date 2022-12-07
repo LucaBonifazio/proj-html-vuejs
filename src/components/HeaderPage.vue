@@ -26,7 +26,7 @@
         >
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li
-              v-for="i in arrLink"
+              v-for="i in links"
               :key="i"
               class="nav-item"
             >
@@ -59,10 +59,8 @@
 <script>
 export default {
   name: 'HeaderPage',
-  data() {
-    return {
-      arrLink: ['Home', 'Services', 'About', 'Videos', 'Blog', 'Stores'],
-    };
+  props: {
+    links: Array,
   },
 };
 </script>

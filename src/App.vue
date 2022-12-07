@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <HeaderPage />
+  <div id="start_app">
+    <HeaderPage
+      :links="arrLinks"
+    />
     <MainPage />
-    <FooterPage />
+    <FooterPage :posts="arrPosts" />
   </div>
 </template>
 
@@ -17,6 +19,12 @@ export default {
     HeaderPage,
     MainPage,
     FooterPage,
+  },
+  data() {
+    return {
+      arrLinks: ['Home', 'Services', 'About', 'Videos', 'Blog', 'Stores'],
+      arrPosts: ['The best protein shake', 'Ultimate cardio workout', 'New juices avaible now', ' Tips to find training partners', '20 best healthy recipes'],
+    };
   },
 };
 </script>

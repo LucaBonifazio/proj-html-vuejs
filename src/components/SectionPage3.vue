@@ -1,7 +1,7 @@
 <template>
   <section class="playlist_video">
-    <div class="image_container">
-      <div class="image_box">
+    <div class="row row-cols-sm-1 row-cols-md-2 image_container">
+      <div class="col image_box">
         <img
           class="img-fluid"
           src="@/assets/img/service15-2x.jpg"
@@ -9,7 +9,7 @@
         >
         <i class="fa-solid fa-play" />
       </div>
-      <div class="text_box">
+      <div class="col text_box">
         <h5>Tune up your workout</h5>
         <h1>The best health & fitness advice online</h1>
         <div class="logo_box d-flex">
@@ -103,14 +103,9 @@ a {
   text-decoration: none;
   color: #000000;
 }
-.image_container{
-  position: relative;
-}
 .image_box {
-  position: absolute;
-  top: -50px;
-  width:600px;
-  height:600px;
+  position: relative;
+  margin-top: -50px;
   img {
     border-radius: 2px 2px 50px 2px;
   }
@@ -121,7 +116,7 @@ a {
   flex-direction: column;
   justify-content: center;
   padding-top: 5rem;
-  margin-left: 50%;
+  padding: 3rem;
   h5 {
     color: rgb(0, 102, 255);
   }
@@ -149,6 +144,8 @@ a {
   }
   &:hover {
     cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
   }
 }
 
@@ -160,7 +157,7 @@ a {
 }
 
 .playlist_ft{
-  margin-top: 18rem;
+  margin-top: 5rem;
 }
 
 .text_img {
@@ -173,6 +170,7 @@ a {
     padding-bottom: .5em;
     &:hover {
       transform: scale(1.1);
+      transition: 1s;
     }
 }
 
