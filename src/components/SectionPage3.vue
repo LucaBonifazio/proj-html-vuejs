@@ -1,6 +1,6 @@
 <template>
   <section class="playlist_video">
-    <div class="row row-cols-sm-1 row-cols-md-2 image_container">
+    <div class="row row-cols-sm-1 row-cols-md-2 m-auto">
       <div class="col image_box">
         <img
           class="img-fluid"
@@ -106,6 +106,7 @@ a {
 .image_box {
   position: relative;
   margin-top: -50px;
+  margin-left: -20px;
   img {
     border-radius: 2px 2px 50px 2px;
   }
@@ -117,6 +118,7 @@ a {
   justify-content: center;
   padding-top: 5rem;
   padding: 3rem;
+  margin-left: 1rem;
   h5 {
     color: rgb(0, 102, 255);
   }
@@ -172,17 +174,17 @@ a {
       transform: scale(1.1);
       transition: 1s;
     }
-}
+  }
+  .fa-play{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
 
 .row {
   margin-bottom: 5rem;
 }
 
-.fa-play{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
   .icon_sm{
     position: absolute;
     top: 40%;

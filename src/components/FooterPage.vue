@@ -93,6 +93,9 @@ export default {
     a {
       color: rgb(255, 255, 255);
       text-decoration: none;
+      &:hover{
+       color: gold;
+     }
     }
   }
 
