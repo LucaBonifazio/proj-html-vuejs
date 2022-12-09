@@ -65,10 +65,13 @@ a {
   text-decoration: none;
   color: #000000;
 }
+.col{
+  &:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+}
 .col img {
     padding-bottom: .5em;
-    &:hover {
-      transform: scale(1.1);
-    }
-}
+  }
 </style>

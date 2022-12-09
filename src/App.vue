@@ -35,6 +35,11 @@ export default {
 
   html {
     font-family: 'Roboto', sans-serif;
+    ::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    }
   }
 
   .fa-solid.fa-play{
