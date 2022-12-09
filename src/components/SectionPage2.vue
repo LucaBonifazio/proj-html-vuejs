@@ -99,7 +99,7 @@ export default {
 <style scoped lang="scss">
   .choise_sect {
     position: relative;
-    background-image: linear-gradient(to bottom right, #2805c4, #bc0428);
+    background-image: linear-gradient(to bottom right, #2800db, #ff002b);
     padding-bottom: 8rem;
   }
 
